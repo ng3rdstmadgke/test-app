@@ -15,3 +15,5 @@ docker push ${ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/test-app:latest
 VERSION=$(date +"%Y%m%d.%H%M")
 docker tag test-app:latest ${ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/test-app:${VERSION}
 docker push ${ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/test-app:${VERSION}
+
+echo "VERSION: ${VERSION}"
